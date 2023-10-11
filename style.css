@@ -16,9 +16,9 @@ h3 {
 }
 
 header,
-header > div > h1, 
-main > div > div > h2,
-main > div > div > h3,
+header > div > h1,
+main > div > div  h2,
+main > div > div  h3,
 main > div > div > article > h2,
 main > div > div > article > h3,
 footer {
@@ -53,6 +53,10 @@ p {
   line-height: 1.5;
 }
 
+#portfolio p {
+  font-size: 14px;
+}
+
 /* The div container constrains the content width within the main container to 600px */
 div {
   margin: auto;
@@ -76,6 +80,20 @@ hr {
   border: 2px solid #003049;
 }
 
+.group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
 
 a:link    { color: #d62828;  }
 a:visited { color: red;   }
